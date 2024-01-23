@@ -1,0 +1,24 @@
+<mat-expansion-panel
+  (opened)="displayUserDetails = true"
+  (closed)="displayUserDetails = false"
+  hideToggle
+>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <span>Vartotojas:</span>
+      <button
+        type='button'
+        (click)="toggleUserDetails()"
+        color="primary"
+        mat-button
+      >{{user?.name}} {{user?.last_name}}</button>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <mat-grid-list cols="2" rowHeight="22px">
+    @for (keyValuePair of user | keyvalue; track keyValuePair.key) {
+      <mat-grid-tile>{{ keyValuePair.key }}:</mat-grid-tile>
+      <mat-grid-tile >{{ keyValuePair.value }}</mat-grid-tile>
+    }
+  </mat-grid-list>
+</mat-expansion-panel>

@@ -1,0 +1,57 @@
+@use '@angular/material' as mat;
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@include mat.core();
+
+/* TYPOGRAPHY */
+$typography-config: mat.define-typography-config(
+  $font-family: '"Source Sans Pro", -apple-system, sans-serif, Arial',
+  $headline-2: mat.define-typography-level(2.125rem, 2.125rem, 400),
+  $subtitle-2: mat.define-typography-level(1.5rem, 1.5rem, 400),
+);
+@include mat.typography-hierarchy($typography-config);
+
+/* THEME */
+$dark-primary-text: #333;
+$light-primary-text: white;
+
+$rc-ses-primary-palette: (
+  50: #e2f7fd,
+  100: #b7ecfa,
+  200: #8ae0f6,
+  300: #60d3f0,
+  400: #47c9ea,
+  500: #3199b4,
+  600: #3ab0cf,
+  700: #319bb4,
+  800: #2b879b,
+  900: #1f646f,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+  )
+);
+
+$primary: mat.define-palette($rc-ses-primary-palette, 500);
+// $light-secondary: mat.define-palette($light-secondary-palette, 500);
+$accent: mat.define-palette(mat.$indigo-palette, 500);
+$warn: mat.define-palette(mat.$indigo-palette, 500);
+
+$theme-light: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    // secondary: $light-secondary,
+    accent: $accent,
+    warn: $warn
+  ),
+  typography: $typography-config
+));
+
+@include mat.all-component-themes($theme-light);
