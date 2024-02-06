@@ -27,18 +27,18 @@ export class AppComponent {
   public readonly serviceName = 'Angular paslauga #1';
 
   /*
-    * @MICROFRONTEND
-    *
-    * `addToCart` metodo kvietimas, kurį eksportuoja
-    * single-spa modulis @rc-ses/self-service-portal-ui
-    */
+   * @MICROFRONTEND
+   *
+   * `addToCart` metodo kvietimas, kurį eksportuoja
+   * single-spa modulis @rc-ses/self-service-portal-ui
+   */
   public handleAddToCart = (service: string) => addToCart(service);
 
   /*
-    * @MICROFRONTEND
-    *
-    * `redirectToLanding` metodo kvietimas, kurį eksportuoja
-    * single-spa modulis @rc-ses/self-service-portal-ui-root
-    */
+   * @MICROFRONTEND
+   *
+   * `redirectToLanding` metodo kvietimas, kurį eksportuoja
+   * single-spa modulis @rc-ses/self-service-portal-ui-root
+   */
   public handleRedirectToLanding = () => redirectToLanding();
 }
