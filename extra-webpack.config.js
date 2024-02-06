@@ -9,7 +9,7 @@ const singleSpaAngularWebpack = require('single-spa-angular/lib/webpack').defaul
  *
  * Webpack konfigūracija kuriamą išplečiant single-spa pateikiamą
  * bazinę Webpack konfigūraciją, kuri sukuriama kviečiant
- * `singleSpaAngularWebpack`. Žemiau pateikiamas lodas leidžia
+ * `singleSpaAngularWebpack`. Žemiau pateikiamas kodas leidžia
  * praplėsti bazinę konfigūraciją pagal poreikius.
  *
  * `externals` yra nurodomas projekto priklausomybių prefix'as,
