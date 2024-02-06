@@ -8,7 +8,7 @@ const singleSpaAngularWebpack = require('single-spa-angular/lib/webpack').defaul
  * informaciją vis dar yra dirbama iš single-spa kūrėjų pusės.
  *
  * Webpack konfigūracija kuriamą išplečiant single-spa pateikiamą
- * bazinę Webpack konfigūraciją, kuru sukuriama kviečiant
+ * bazinę Webpack konfigūraciją, kuri sukuriama kviečiant
  * `singleSpaAngularWebpack`. Žemiau pateikiamas lodas leidžia
  * praplėsti bazinę konfigūraciją pagal poreikius.
  *
