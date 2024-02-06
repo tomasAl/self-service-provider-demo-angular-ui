@@ -1,3 +1,11 @@
+/*
+ * @MICROFRONTEND
+ *
+ * Minimali būtina TypeScript konfigūracija.
+ * Privalomos ir labai svarbios yra nurodytos
+ * `"esModuleInterop": true` bei `"moduleResolution": "node"`
+ * reikšmės.
+ */
 {
   "compileOnSave": false,
   "compilerOptions": {

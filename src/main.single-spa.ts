@@ -13,7 +13,16 @@ import { EmptyRouteComponent } from './app/empty-route/empty-route.component';
 if (environment.production) {
   enableProdMode();
 }
-
+/*
+ * @MICROFRONTEND
+ *
+ * Aplikacija turi būti sukuriama naudojant `singleSpaAngular` metodą.
+ *
+ * Pagrindinis aplikacijos komponentas pateikiamas kaip pirmas parametras
+ * `bootstrapApplication` metodui. `providers` šiuo atveju yra aplikacijai
+ * būtinų provider'ių masyvas ir gali būti praplėstas pagal aplikacijos
+ * kūrėjų poreikius.
+ */
 const lifecycles = singleSpaAngular({
   bootstrapFunction: (singleSpaProps) => {
     singleSpaPropsSubject.next(singleSpaProps);

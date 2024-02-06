@@ -1,3 +1,12 @@
+/*
+ * @MICROFRONTEND
+ *
+ * Minimali būtina konfigūracija.
+ * Privaloma naudoti "@angular-builders/custom-webpack:browser".
+ * Modifikuojant aplikacijos/modulio pavadinimą, privaloma
+ * analogiškai pakoreguoti visas vietas, kur pavyzdyje naudojama
+ * `@rc-ses/self-service-provider-demo-angular-ui` reikšmė.
+ */
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
