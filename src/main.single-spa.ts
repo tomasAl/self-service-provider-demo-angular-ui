@@ -41,6 +41,11 @@ const lifecycles = singleSpaAngular({
   NgZone,
 });
 
+/*
+ * @MICROFRONTEND
+ *
+ * single-spa pateikiami lifecycle hook'ai.
+ */
 export const bootstrap = lifecycles.bootstrap;
 export const mount = lifecycles.mount;
 export const unmount = lifecycles.unmount;
