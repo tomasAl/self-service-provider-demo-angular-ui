@@ -1,0 +1,18 @@
+.mat-expansion-panel {
+  box-shadow: none !important;
+  text-align: center;
+}
+
+.mat-expansion-panel-header-title {
+  align-items: baseline;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.mat-grid-tile:nth-child(odd) > .mat-grid-tile-content {
+  justify-content: flex-end;
+}
+
+.mat-grid-tile:nth-child(even) > .mat-grid-tile-content {
+  justify-content: flex-start;
+}

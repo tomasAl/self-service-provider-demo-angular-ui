@@ -1,0 +1,24 @@
+<div class="content mat-typography">
+  <div class="mat-headline-2" style="line-height: 1.235; margin-bottom: 0;">Angular demo paslauga</div>
+
+  <app-user-details-section></app-user-details-section>
+
+  <div style="margin: 1.875rem 0;">
+    <span class="mat-subtitle-2" style="margin-right: .5rem; vertical-align: sub;">{{ serviceName }}</span>
+    <button
+      type='button'
+      (click)="handleAddToCart(serviceName)"
+      color="primary"
+      mat-flat-button
+    >Pridėti paslaugą į krepšelį</button>
+  </div>
+
+  <div>
+    <button
+      type='button'
+      (click)="handleRedirectToLanding()"
+      color="primary"
+      mat-button
+    >Grįžti į titulinį</button>
+  </div>
+</div>
